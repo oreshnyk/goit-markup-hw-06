@@ -543,7 +543,7 @@ a .link.current {
   margin-top: 50px;
 }
 
-.list.item::nth-child(3n) {
+.list.item:nth-child(3n) {
   margin-right: 0px;
 }
 
@@ -921,6 +921,51 @@ p {
 .join .social:nth-child(4n) {
   margin-right: 0px;
 }
+
+/* ДЗ делаю старт */
+
+.mailing-list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.subscribe {
+  width: 100%;
+  margin-left: 70px;
+}
+
+.subscribe-item {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.subscribe input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--footer-color);
+}
+
+.subscription {
+  margin-left: 12px;
+  position: relative;
+  padding: 15px 29px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  border: none;
+  letter-spacing: 0.06em;
+}
+
+/* ДЗ 6 делаю */
 
 .project-cards a {
   display: block;
