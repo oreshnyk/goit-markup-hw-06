@@ -414,14 +414,14 @@
                 </div>
                 <div class="subscribe">
                     <p class="mailing-list">подпишитесь на рассылку</p>
-                    <ul class="subscribe-item list">
+                    <div class="subscribe-item">
                         <input type="email" name="email" placeholder="E-mail">
                         <button type="submit" class="subscription">Подписаться
                             <svg class="modal-icon">
                                 <use href="./images/icons-defs.svg#icon-close-modal"></use>
                             </svg>
                         </button>
-                    </ul>
+                    </div>
                 </div>
             </div>
     </footer>
@@ -429,6 +429,30 @@
         <!-- Backdrop -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+                <h3 class="heading-form">Оставьте свои данные, мы вам перезвоним</h3>
+                <div class="modal-form">
+                    <div class="wraper">
+                        <label class="label" for="">Имя</label>
+                        <input class="input" type="text" name="name" id="" autocomplete="on" />
+
+                        <label class="label" for="">Телефон</label>
+                        <input class="input" type="phone" name="phone" id="phone" autocomplete="on" />
+
+                        <label class="label" for="">Почта</label>
+                        <input class="input" type="email" name="email" id="email" autocomplete="on" />
+
+                        <label class="label" for="">Комментарий</label>
+                        <textarea class="comment" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+
+                        <div class="wraper-submit">
+                        <input class="checkbox" type="checkbox" name="agreement value="agreement" id="agreement">
+                        <label class="agreement" for="agreement">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+                        
+                        <button class="submit-form" type="submit">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+
                 <button type="button" class="close-modal" data-modal-close>
                     <svg class="modal-icon">
                         <use href="./images/icons-defs.svg#icon-close-modal"></use>
