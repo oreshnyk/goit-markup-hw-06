@@ -952,7 +952,7 @@ p {
 .subscription {
   margin-left: 12px;
   position: relative;
-  padding: 15px 29px;
+  padding: 10px 62px 10px 29px;
   background-color: var(--accent-color);
   color: var(--white-color);
   cursor: pointer;
@@ -1031,7 +1031,7 @@ footer .social-icon {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  padding: 32px;
+  padding: 40px;
   height: 581px;
   width: 530px;
   background-color: var(--white-color);
@@ -1055,24 +1055,29 @@ footer .social-icon {
   background-color: var(--white-color);
 }
 
+.close-modal:hover,
+.close-modal:focus {
+  fill: var(--accent-color);
+}
+
 .heading-form {
+  text-align: center;
   font-family: "Roboto";
-  /* font-style: normal; */
+  font-style: normal;
   font-weight: 700; 
   font-size: 20px;
   line-height: 1.17;
 
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
 .modal-form {
   display: flex;
-  height: 100%;
 }
 
 .wraper {
-  /* height: 100%; */
+  margin-top: 12px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -1083,19 +1088,34 @@ footer .social-icon {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
 
-/* .checkbox {
-  height: 0;
-} */
+  margin-top: 20px;
+}
 
 .label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+
+.label:first-child {
+  margin-top: 0px;
+}
+
+.agreement {
+  line-height: 1.71;
+}
+
+.agreement a {
+  color: var(--accent-color);
 }
 
 .modal-form .input {
+  padding: 8px 9px;
+
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1103,6 +1123,14 @@ footer .social-icon {
 }
 
 .comment {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+
   padding: 12px 16px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1110,9 +1138,19 @@ footer .social-icon {
   border-radius: 4px;
 }
 
+textarea {
+  resize: none;
+}
+
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .submit-form {
   width: 200px;
   padding: 15px 29px;
+  margin-top: 30px;
+
   background-color: var(--accent-color);
   color: var(--white-color);
   cursor: pointer;
@@ -1129,4 +1167,13 @@ footer .social-icon {
   top: 15px;
   right: -4px;
   transform: translate(-50%, -50%);
+}
+
+.subscribe-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+  top: 13px;
+  right: 28px;
 }
