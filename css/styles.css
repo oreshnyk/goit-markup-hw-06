@@ -808,6 +808,8 @@ p {
 }
 
 .clients li {
+  margin-right: 30px;
+
   position: relative;
   width: 170px;
   height: 92px;
@@ -828,23 +830,31 @@ p {
 }
 
 .clients svg {
-  /* padding: 16px 32px; */
-  width: 100%;
-  height: 100%;
-
-  outline: 1px solid var(--icon-primary-color);
   border-radius: 4px;
 }
 
+.client-thumb {
+  outline: 1px solid var(--icon-primary-color);
+  border-radius: 4px;
+
+  background-color: var(--white-color);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0px;
+
+  transition-property: outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .client-icon {
-  padding: 12px;
-  /* width: 44px;
-  height: 44px; */
+  width: 106px;
+  height: 60px;
   color: var(--accent-color);
   fill: var(--icon-primary-color);
-  outline-color: var(--icon-primary-color);
 
-  transition-property: fill, outline-color;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -853,7 +863,18 @@ p {
   fill: var(--accent-color);
   outline-color: var(--accent-color);
 }
+
 .client .link:focus .client-icon {
+  fill: var(--accent-color);
+  outline-color: var(--accent-color);
+}
+
+.client .link:hover .client-thumb {
+  fill: var(--accent-color);
+  outline-color: var(--accent-color);
+}
+
+.client .link:focus .client-thumb {
   fill: var(--accent-color);
   outline-color: var(--accent-color);
 }
